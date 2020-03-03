@@ -109,7 +109,21 @@ public class Picture extends SimplePicture
         pixelObj.setGreen(0);
       }
     }
-}
+   }
+   
+   public void negate()
+   {
+       Pixel[][] pixels = this.getPixels2D();
+       for(Pixel[] rowArray : pixels)
+       {
+           for(Pixel pixelObj : rowArray)
+           {
+               pixelObj.setRed(255-pixelObj.getRed());
+               pixelObj.setGreen(255-pixelObj.getGreen());
+               pixelObj.setBlue(255-pixelObj.getBlue());
+           }
+       }
+   }
   
   
   /** Method that mirrors the picture around a 

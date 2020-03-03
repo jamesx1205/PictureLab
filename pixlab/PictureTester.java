@@ -25,7 +25,13 @@ public class PictureTester
     beach.explore();
   }
   
-  
+  public static void testNegate()
+  {
+      Picture beach = new Picture ("beach.jpg");
+      beach.explore();
+      beach.negate();
+      beach.explore();
+  }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
