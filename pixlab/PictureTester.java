@@ -32,6 +32,22 @@ public class PictureTester
       beach.negate();
       beach.explore();
   }
+  
+    public static void testGrayscale()
+  {
+      Picture beach = new Picture ("beach.jpg");
+      beach.explore();
+      beach.grayscale();
+      beach.explore();
+  }
+  
+      public static void testFixUnderwater()
+  {
+      Picture water = new Picture ("water.jpg");
+      water.explore();
+      water.fixUnderwater();
+      water.explore();
+  }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -48,6 +64,22 @@ public class PictureTester
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
+  }
+  
+    public static void testMirrorVerticalRightToLeft()
+  {
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorVerticalRightToLeft();
+    redMotorcycle.explore();
+  }
+  
+    public static void testMirrorHorizontal()
+  {
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorTemple();
+    redMotorcycle.explore();
   }
   
   /** Method to test the collage method */
@@ -74,13 +106,15 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-    testKeepOnlyBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
+    //testMirrorVerticalRightToLeft();
+    testMirrorHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
