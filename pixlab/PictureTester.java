@@ -57,6 +57,14 @@ public class PictureTester
     caterpillar.explore();
   }
   
+    public static void testMirrorDiagonal()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -78,7 +86,15 @@ public class PictureTester
   {
     Picture redMotorcycle = new Picture("redMotorcycle.jpg");
     redMotorcycle.explore();
-    redMotorcycle.mirrorTemple();
+    redMotorcycle.mirrorHorizontal();
+    redMotorcycle.explore();
+  }
+  
+      public static void testMirrorHorizontalBotToTop()
+  {
+    Picture redMotorcycle = new Picture("redMotorcycle.jpg");
+    redMotorcycle.explore();
+    redMotorcycle.mirrorHorizontalBotToTop();
     redMotorcycle.explore();
   }
   
@@ -114,8 +130,9 @@ public class PictureTester
     //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorVerticalRightToLeft();
-    testMirrorHorizontal();
-    //testMirrorTemple();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
+    testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
